@@ -15,14 +15,16 @@ console.log(linguagem.length);
 /* 3. Use console.log to list the first element from the array using an index value. */
 console.log(linguagem[0]);
 /* 4. Use console.log to list the last element from the array using an index value. */
-console.log(linguagem[6]);
+console.log(linguagem[linguagem.length -1]);
 
 // 5. Use an array method to add an element to the END of the array.
 
+linguagem.push('Go');
+
 // 6. Use an array method to add an element to the BEGINNING of the array.
-
+linguagem.unshift('Erlang');
 /* 7. Log all of the elements in the array as a single string using the array .join() method */
-
+console.log(linguagem.join(', '));
 // 8. Use an array method to REMOVE the LAST element from the array.
 
 // 9. Use an array method to REMOVE the first element from the array.
