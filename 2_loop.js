@@ -14,6 +14,14 @@ function random100() {
 
 /* 1. Create a function named createRandomList that uses a for loop to create an array containing 10 random numbers from 1 to 100 (use the supplied function above to generate the numbers). The function should return that array. */
 
+function criarListaAleatoria(){
+  let randomList =[];
+  for (let i =0; i<10; i++){
+    let randomNumber = random100();
+    randomList.push(randomNumber);
+  }
+};
+
 /* 2. Call the createRandomList() function and store the results in a variable named myRandomList. */
 
 /* 3. Use a for loop to access each element in the loop. Each time through the loop log a message to the console that looks something like this:
