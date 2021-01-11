@@ -30,9 +30,18 @@ function createDeck() {
   var suites = ['♠︎','♣︎','♥︎','♦︎'];
   var ranks = ['Ace','King','Queen','Jack','10','9','8','7','6','5','4', '3','2'];
   var deck = [];
-  // add your code below here:
   
+  // add your code below here:
+  for(let i = 0; i < suites.length; i++){
+    for(let j=0; j < ranks.length; j++){
+    
+    console.log('Loop externo:' +i+ ' Loop interno: '+j);
+    }
+  
+  }
 }
+
+createDeck();
 
 // 6. Call the createDeck() function and store the results in a new variable named myDeck
 
