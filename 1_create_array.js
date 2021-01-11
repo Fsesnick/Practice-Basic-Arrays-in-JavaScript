@@ -26,9 +26,9 @@ linguagem.unshift('Erlang');
 /* 7. Log all of the elements in the array as a single string using the array .join() method */
 console.log(linguagem.join(', '));
 // 8. Use an array method to REMOVE the LAST element from the array.
-
+console.log(linguagem.pop());
 // 9. Use an array method to REMOVE the first element from the array.
-
+console.log(linguagem.shift());
 /* 10. Log all of the elements in the array as a single string using the array .join() method. Thisis the same as step 7 above */
-
+console.log(linguagem.join(', '));
 // Run your code by typing node 1_create_array.js in the console below
