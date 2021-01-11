@@ -34,19 +34,25 @@ function createDeck() {
   // add your code below here:
   for(let i = 0; i < suites.length; i++){
     for(let j=0; j < ranks.length; j++){
-    
-    console.log('Loop externo:' +i+ ' Loop interno: '+j);
+    let cartao = [];
+      cartao.push(ranks[j],suites[i]);
+      deck.push(cartao);
     }
   
   }
+  return shuffle(deck);
 }
 
-createDeck();
+let meuDeck = createDeck();
+//console.log (meuDeck);
+
 
 // 6. Call the createDeck() function and store the results in a new variable named myDeck
 
 /* 7. Use a for loop to loop through the deck and list each card in the order the appear in the newly shuffled array. Use the log() method to print out a message like this, once for each card:
 "7 of ♥.︎"
 */
-
+for (let i = 0; i < meuDeck.length; i++){
+  console.log(meuDeck[i][0] + ' of '+meuDeck[i][1]);
+}
 // Run your code by typing node 3_deck.js in the console below
